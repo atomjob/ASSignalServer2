@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>websocket test page, Please not use it in bussiness enviroment</title>
+</head>
+<body>
+    <script src="./javascripts/ws.js"></script>
+    sendMessage:<input id="messageContent"  type="text"/>
+    receiveMessage:<input id="receiveMsg" type="text"/><br><br>
+    <button id="connectBtn" text="send" onClick="clickStartWSConnect()">connect</button>
+    <button id="disconnectBtn" text="send" onClick="clickWSDisconnect()">disconnect</button>
+    <button id="sendBtn" text="send" onClick="clickWSSendMsg()">send</button>
+    <br>
+    <video id ="localVideo" width="500" height="400" controls="true"></video>
+    <video id ="remoteVideo" width="500" height="400" controls="true"></video>
+    <br>
+    peer:<input id="peerId"  type="text"/>
+    otherPeer:<input id="otherPeer"  type="text"/>
+    <button id="sendOffer" onclick="onClickSendOffer()">send offer</button>
+    <button id="stop-peer-connection">Stop Peer Connection</button>
+    <button id="getpeernum" onclick="onClickgetPeerNum()">Get Peer Num</button>
+</body>
+</html>
